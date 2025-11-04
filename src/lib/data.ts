@@ -1,3 +1,12 @@
+import categoryTable from '@/assets/category-table.jpg';
+import categoryChair from '@/assets/category-chair.jpg';
+import categoryCabinet from '@/assets/category-cabinet.jpg';
+import categorySofa from '@/assets/category-sofa.jpg';
+import categoryStorage from '@/assets/category-storage.jpg';
+import hero1 from '@/assets/hero-1.jpg';
+import hero2 from '@/assets/hero-2.jpg';
+import hero3 from '@/assets/hero-3.jpg';
+
 export interface Product {
   id: number;
   name: string;
@@ -27,22 +36,22 @@ export interface Project {
 }
 
 export const categories = [
-  { id: 1, name: "Meja", slug: "table", image: "/src/assets/category-table.jpg" },
-  { id: 2, name: "Kursi", slug: "chair", image: "/src/assets/category-chair.jpg" },
-  { id: 3, name: "Lemari", slug: "cabinet", image: "/src/assets/category-cabinet.jpg" },
-  { id: 4, name: "Kasur & Sofa", slug: "sofa", image: "/src/assets/category-sofa.jpg" },
-  { id: 5, name: "Rak Penyimpanan", slug: "storage", image: "/src/assets/category-storage.jpg" },
+  { id: 1, name: "Meja", slug: "table", image: categoryTable },
+  { id: 2, name: "Kursi", slug: "chair", image: categoryChair },
+  { id: 3, name: "Lemari", slug: "cabinet", image: categoryCabinet },
+  { id: 4, name: "Kasur & Sofa", slug: "sofa", image: categorySofa },
+  { id: 5, name: "Rak Penyimpanan", slug: "storage", image: categoryStorage },
 ];
 
 export const products: Product[] = [
-  { id: 1, name: "Modern Dining Table", category: "table", price: 4500000, image: "/src/assets/category-table.jpg", description: "Elegant solid wood dining table with modern minimalist design. Perfect for family gatherings and dinner parties. Made from premium oak wood with natural finish.", rating: 4.8, reviews: 156 },
-  { id: 2, name: "Classic Wooden Chair", category: "chair", price: 850000, image: "/src/assets/category-chair.jpg", description: "Comfortable ergonomic chair with classic wooden design. Features curved backrest for optimal support and durable construction.", rating: 4.6, reviews: 203 },
-  { id: 3, name: "Executive Wardrobe", category: "cabinet", price: 8900000, image: "/src/assets/category-cabinet.jpg", description: "Spacious wardrobe with multiple compartments and drawers. Premium finish with soft-close mechanism and ample storage space.", rating: 4.9, reviews: 89 },
-  { id: 4, name: "Luxury Sofa Set", category: "sofa", price: 12500000, image: "/src/assets/category-sofa.jpg", description: "Premium 3-seater sofa with high-quality fabric upholstery. Deep cushioning for maximum comfort with contemporary design.", rating: 4.7, reviews: 127 },
-  { id: 5, name: "Industrial Storage Shelf", category: "storage", price: 2200000, image: "/src/assets/category-storage.jpg", description: "Multi-tier storage shelf with industrial design. Combines wood and metal for modern aesthetic and sturdy construction.", rating: 4.5, reviews: 178 },
-  { id: 6, name: "Office Desk", category: "table", price: 3800000, image: "/src/assets/category-table.jpg", description: "Spacious office desk with built-in cable management. Perfect for home office or professional workspace.", rating: 4.7, reviews: 142 },
-  { id: 7, name: "Lounge Chair", category: "chair", price: 1200000, image: "/src/assets/category-chair.jpg", description: "Relaxing lounge chair with padded armrests. Ideal for reading corner or living room accent piece.", rating: 4.8, reviews: 95 },
-  { id: 8, name: "Bedside Cabinet", category: "cabinet", price: 1500000, image: "/src/assets/category-cabinet.jpg", description: "Compact bedside cabinet with two drawers. Elegant design with smooth gliding mechanism.", rating: 4.4, reviews: 167 },
+  { id: 1, name: "Modern Dining Table", category: "table", price: 4500000, image: categoryTable, description: "Elegant solid wood dining table with modern minimalist design. Perfect for family gatherings and dinner parties. Made from premium oak wood with natural finish.", rating: 4.8, reviews: 156 },
+  { id: 2, name: "Classic Wooden Chair", category: "chair", price: 850000, image: categoryChair, description: "Comfortable ergonomic chair with classic wooden design. Features curved backrest for optimal support and durable construction.", rating: 4.6, reviews: 203 },
+  { id: 3, name: "Executive Wardrobe", category: "cabinet", price: 8900000, image: categoryCabinet, description: "Spacious wardrobe with multiple compartments and drawers. Premium finish with soft-close mechanism and ample storage space.", rating: 4.9, reviews: 89 },
+  { id: 4, name: "Luxury Sofa Set", category: "sofa", price: 12500000, image: categorySofa, description: "Premium 3-seater sofa with high-quality fabric upholstery. Deep cushioning for maximum comfort with contemporary design.", rating: 4.7, reviews: 127 },
+  { id: 5, name: "Industrial Storage Shelf", category: "storage", price: 2200000, image: categoryStorage, description: "Multi-tier storage shelf with industrial design. Combines wood and metal for modern aesthetic and sturdy construction.", rating: 4.5, reviews: 178 },
+  { id: 6, name: "Office Desk", category: "table", price: 3800000, image: categoryTable, description: "Spacious office desk with built-in cable management. Perfect for home office or professional workspace.", rating: 4.7, reviews: 142 },
+  { id: 7, name: "Lounge Chair", category: "chair", price: 1200000, image: categoryChair, description: "Relaxing lounge chair with padded armrests. Ideal for reading corner or living room accent piece.", rating: 4.8, reviews: 95 },
+  { id: 8, name: "Bedside Cabinet", category: "cabinet", price: 1500000, image: categoryCabinet, description: "Compact bedside cabinet with two drawers. Elegant design with smooth gliding mechanism.", rating: 4.4, reviews: 167 },
 ];
 
 export const customerReviews: Review[] = [
@@ -52,7 +61,7 @@ export const customerReviews: Review[] = [
 ];
 
 export const projects: Project[] = [
-  { id: 1, title: "Modern Living Room", description: "Complete living room furniture set with contemporary design featuring custom sofa, coffee table, and entertainment unit.", image: "/src/assets/hero-1.jpg", location: "Jakarta Selatan", year: "2024" },
-  { id: 2, title: "Minimalist Dining Space", description: "Elegant dining area with handcrafted wooden table and matching chairs, perfect for family meals and entertaining guests.", image: "/src/assets/hero-2.jpg", location: "Bandung", year: "2024" },
-  { id: 3, title: "Luxury Master Bedroom", description: "Premium bedroom furniture including king-size bed, wardrobes, and nightstands with sophisticated finish.", image: "/src/assets/hero-3.jpg", location: "Surabaya", year: "2023" },
+  { id: 1, title: "Modern Living Room", description: "Complete living room furniture set with contemporary design featuring custom sofa, coffee table, and entertainment unit.", image: hero1, location: "Jakarta Selatan", year: "2024" },
+  { id: 2, title: "Minimalist Dining Space", description: "Elegant dining area with handcrafted wooden table and matching chairs, perfect for family meals and entertaining guests.", image: hero2, location: "Bandung", year: "2024" },
+  { id: 3, title: "Luxury Master Bedroom", description: "Premium bedroom furniture including king-size bed, wardrobes, and nightstands with sophisticated finish.", image: hero3, location: "Surabaya", year: "2023" },
 ];
